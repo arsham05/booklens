@@ -1,0 +1,52 @@
+{
+  "sentiment_gold_set": {
+    "n": 80,
+    "model": "finiteautomata/bertweet-base-sentiment-analysis",
+    "macro_precision": 0.5796296296296296,
+    "macro_recall": 0.558931475029036,
+    "macro_f1": 0.5419405910008012,
+    "confusion_matrix_labels": [
+      "NEG",
+      "NEU",
+      "POS"
+    ],
+    "confusion_matrix": [
+      [
+        13,
+        6,
+        6
+      ],
+      [
+        4,
+        8,
+        2
+      ],
+      [
+        1,
+        16,
+        24
+      ]
+    ]
+  },
+  "baseline_vs_transformer_heldout_split": {
+    "n_test": 16,
+    "baseline_macro_f1": 0.15873015873015872,
+    "transformer_macro_f1": 0.6078431372549019,
+    "note": "TF-IDF+LR trained on 64 rows / evaluated on the same 16-row held-out split as the transformer."
+  },
+  "sensitivity_check_min_cluster_size": {
+    "baseline_min_cluster_size": 5,
+    "baseline_clusters": 6,
+    "baseline_outliers": 39,
+    "new_min_cluster_size": 10,
+    "new_clusters": 2,
+    "new_outliers": 41,
+    "new_outlier_ratio": 0.1898,
+    "source": "recorded by hand in notebooks/01_booklens_experiment.ipynb, cell 55 (original Colab run on the full 220-book working set)"
+  },
+  "inference_summary": {
+    "total_excerpts_processed": 748,
+    "inference_time_seconds": 10.49,
+    "source": "recorded by hand in notebooks/01_booklens_experiment.ipynb, cell 22 (original Colab run, single-row .apply() timing)"
+  }
+}

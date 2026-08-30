@@ -1,0 +1,8 @@
+Topic,Human_Label,Coherence_Note
+0,"Textbooks, Reference & Self-Help",Mixed / overly broad -- catch-all for instructional and academic material (cell 53)
+1,"Biographies, Memoirs & Literary History",
+2,"Thrillers, Crime & Suspense Fiction",Coherent -- narrative fiction across a few subgenres (cell 53)
+3,"Nature, Ecology & Historical Science",
+4,"War, Espionage & Military History",Highly coherent -- WWI/WWII/Vietnam/Civil War (cell 53)
+5,"World History, Empires & Politics",
+-1,Outliers / Uncategorized,"Niche single-book subjects, not noise (cell 45); 39 docs at min_cluster_size=5 (cell 55)"

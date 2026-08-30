@@ -1,0 +1,30 @@
+# Secrets / credentials
+kaggle.json
+.env
+
+# Raw and intermediate data — everything in data/ is ignored by default,
+# except the small redistributable files explicitly un-ignored below.
+data/*
+!data/README.md
+!data/sample_books.csv
+!data/gold_set_annotated.csv
+!data/.gitkeep
+
+# Model weights / caches
+*.bin
+*.pt
+*.safetensors
+.cache/
+huggingface/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store

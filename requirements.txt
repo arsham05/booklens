@@ -1,0 +1,27 @@
+# Core data handling
+pandas>=2.0
+numpy>=1.24
+
+# Plotting / inline figure preview
+matplotlib>=3.7
+Pillow>=10.0
+
+# Sentiment inference (Task 2) + classical baseline (Task 4)
+torch>=2.1
+transformers>=4.38
+scikit-learn>=1.3
+
+# Topic discovery pipeline: embeddings -> UMAP -> HDBSCAN -> BERTopic (Tasks 5-8)
+sentence-transformers>=2.5
+umap-learn>=0.5
+hdbscan>=0.8.33
+bertopic>=0.16
+
+# Interactive 2D topic visualization (topic_model.visualize_documents)
+plotly>=5.18
+
+# Data acquisition (Task 1) — Kaggle CLI, used from the shell, not imported in code
+kaggle>=1.6
+
+# Tests (tests/test_data_pipeline.py)
+pytest>=8.0
